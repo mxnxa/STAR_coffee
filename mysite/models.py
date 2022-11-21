@@ -4,5 +4,5 @@ from django.db import models
 class MainContent(models.Model):
     title = models.CharField(max_length=200)
     content = models.TextField()
-    # image = models.ImageField(upload_to='uploads/%Y/%m/%d/', blank=True)
+    # image = models.ImageField(upload_to='static/files/', blank=True, null=True)
     pub_date = models.DateTimeField('date published')

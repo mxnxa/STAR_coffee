@@ -6,6 +6,9 @@ def mainpage(request):
 def about(request):
     return render(request, 'pages/company_info.html')
 
+def history(request):
+    return render(request, 'pages/company_history.html')
+
 def contact(request):
     return render(request, 'pages/contact.html')
 

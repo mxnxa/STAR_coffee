@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 {% load static %}
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
@@ -16,7 +16,7 @@
 </head>
 <body>
 <!-- Responsive navbar-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg position-fixed navbar-dark bg-dark">
     <div class="container px-5">
         <a class="navbar-brand" href="/"><span>★</span> coffee</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -26,7 +26,20 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item"><a class="nav-link" href="/">HOME</a></li>
-                <li class="nav-item"><a class="nav-link active" href="/about/">ABOUT</a></li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="nav-link active" type="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                            ABOUT
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/about/">회사 소개</a></li>
+                            <li><a class="dropdown-item" href="history/">연혁</a></li>
+                        </ul>
+                    </div>
+                </li>
+
                 <li class="nav-item"><a class="nav-link" href="/mysite/">PRODUCT</a></li>
                 <li class="nav-item"><a class="nav-link" href="/contact/">CONTACT</a></li>
             </ul>
@@ -42,27 +55,28 @@
 </header>
 <!-- Content section-->
 <section class="py-5">
-    <div class="container my-5">
-        <div class="row justify-content-center">
+    <div class="container my-5 px-5">
+        <div class="row">
             <div class="col-lg-6">
                 <h2>"커피 이상의 특별한 경험을 소개합니다."</h2>
                 <p class="mb-0">
                     세계인들의 생활 속에 스며들어 전 세계의 커피 문화를 선도하고 있는 스타커피가 일상을 풍요롭게 하는 제3의 공간으로서
-                    국내에서도 지역사회 속에서 고객 과 함께하며 새로운 커피문화를 정착시키고 있습니다.
+                    국내에서도 지역사회 속에서 고객과 함께하며 새로운 커피문화를 정착시키고 있습니다.
                 </p>
             </div>
         </div>
     </div>
 </section>
 <!-- Image element - set the background image for the header in the line below-->
-<div class="py-5 bg-image-full" style="background-image: url('https://www.starbucks.co.kr/common/img/footer/company/cp_information_st_img01.jpg')">
+<div class="py-5 bg-image-full"
+     style="background-image: url('https://www.starbucks.co.kr/common/img/footer/company/cp_information_st_img01.jpg')">
     <!-- Put anything you want here! The spacer below with inline CSS is just for demo purposes!-->
     <div style="height: 20rem"></div>
 </div>
 <!-- Content section-->
 <section class="py-5">
     <div class="container my-5">
-        <div class="row justify-content-center">
+        <div class="row justify-content-end">
             <div class="col-lg-6">
                 <h2>“지역사회와 커피 지식을 나누고 있습니다.”</h2>
                 <p class="mb-0">스타커피는 모든 직원을 파트너로 존중하고 있으며,
@@ -76,8 +90,19 @@
     </div>
 </section>
 <!-- Footer-->
-<footer class="py-5 bg-dark">
-    <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
+<footer class="bg-dark py-4 mt-auto">
+    <div class="container px-5">
+        <div>
+            <div class="col-auto">
+                <span class="text-white small">TEL : 1522-3232</span>
+                <span class="text-white mx-1">&middot;</span>
+                <span class="text-white small">서울특별시 중구 퇴계로 100 9F (04631)</span>
+            </div>
+            <div class="col-auto">
+                <div class="small m-0 text-white">Copyright &copy; 2022 STAR coffee</div>
+            </div>
+        </div>
+    </div>
 </footer>
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>

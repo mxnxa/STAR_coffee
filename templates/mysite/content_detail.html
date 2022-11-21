@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 {% load static %}
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta name="description" content=""/>
     <meta name="author" content=""/>
-    <title>연혁 | STAR coffee</title>
+    <title>Shop Item - Start Bootstrap Template</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
     <!-- Bootstrap icons-->
@@ -15,8 +15,8 @@
     <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
 </head>
-<body id="page-top">
-<!-- Navigation-->
+<body>
+<!-- Responsive navbar-->
 <nav class="navbar navbar-expand-lg position-fixed navbar-dark bg-dark">
     <div class="container px-5">
         <a class="navbar-brand" href="/"><span>★</span> coffee</a>
@@ -27,50 +27,30 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item"><a class="nav-link" href="/">HOME</a></li>
-                <li class="nav-item">
-                    <div class="dropdown">
-                        <a class="nav-link active" type="button"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                            ABOUT
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/about/">회사 소개</a></li>
-                            <li><a class="dropdown-item" href="history/">연혁</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="/mysite/">PRODUCT</a></li>
-                <li class="nav-item"><a class="nav-link active" href="/contact/">CONTACT</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about/">ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link active" href="/mysite/">PRODUCT</a></li>
+                <li class="nav-item"><a class="nav-link" href="/contact/">CONTACT</a></li>
             </ul>
         </div>
     </div>
 </nav>
-<!-- Header-->
-<header class="bg-dark py-5">
+<!-- Product section-->
+<section class="py-5">
     <div class="container px-4 px-lg-5 my-5">
-        <div class="text-center text-white">
-            <h1 class="display-4 fw-bolder">연혁</h1>
-        </div>
-    </div>
-</header>
-<!-- About section-->
-<section id="about">
-    <div class="container px-4">
-        <div class="row gx-4 justify-content-center">
-            <div class="col-lg-8">
-                <h2>About this page</h2>
-                <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled
-                    so you can use it as a boilerplate or starting point for you own landing page designs! This template
-                    features:</p>
-                <ul>
-                    <li>Clickable nav links that smooth scroll to page sections</li>
-                    <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-                    <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the
-                        navbar
-                    </li>
-                    <li>Minimal custom CSS so you are free to explore your own unique design options</li>
-                </ul>
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-6">
+                <img class="card-img-top mb-5 mb-md-0" src="static/images/winter.jpg" alt="..."/>
+            </div>
+            <div class="col-md-6">
+                <h1 class="display-5 fw-bolder">22 홀리데이 윈터니팅 머그 300ml</h1>
+                <div class="fs-5 mb-5">
+                    <span>22 Holiday Winter Knitting Mug 300ml</span>
+                </div>
+                <p class="lead">포근한 니트가 떠오르는 300ml 용량의 머그입니다.
+                    넉넉한 300ml 용량으로 음료를 즐기기에 적합한 사이즈입니다.
+                    심플한 디자인으로 시즌에 구애받지 않고 사용 가능합니다.
+                    전자레인지, 식기세척기 사용이 불가하며 세척 시엔 반드시 손 세척해 주시기 바랍니다.
+                </p>
             </div>
         </div>
     </div>

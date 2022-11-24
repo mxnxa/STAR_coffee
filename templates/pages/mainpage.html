@@ -1,57 +1,7 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="ko">
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <meta name="description" content=""/>
-    <meta name="author" content=""/>
-    <title>STAR coffee</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
-    <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"/>
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-          crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
-</head>
+{% extends 'base.html' %}
+{% block content %}
 <body class="d-flex flex-column h-100">
 <main class="flex-shrink-0">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg position-fixed navbar-dark bg-dark">
-        <div class="container px-5">
-            <a class="navbar-brand" href="/"><span>★</span> coffee</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" href="/">HOME</a></li>
-                    <li class="nav-item">
-                        <div class="dropdown">
-                            <a class="nav-link" type="button"
-                               data-bs-toggle="dropdown"
-                               aria-expanded="false">
-                                ABOUT
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/about/">회사 소개</a></li>
-                                <li><a class="dropdown-item" href="history/">연혁</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="/mysite/">PRODUCT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/contact/">CONTACT</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
     <!-- Header-->
     <header class="bg-dark py-5">
         <!-- slide -->
@@ -153,24 +103,5 @@
         </div>
     </div>
 </main>
-<!-- Footer-->
-<footer class="bg-dark py-4 mt-auto">
-    <div class="container px-5">
-        <div>
-            <div class="col-auto">
-                <span class="text-white small">TEL : 1522-3232</span>
-                <span class="text-white mx-1">&middot;</span>
-                <span class="text-white small">서울특별시 중구 퇴계로 100 9F (04631)</span>
-            </div>
-            <div class="col-auto">
-                <div class="small m-0 text-white">Copyright &copy; 2022 STAR coffee</div>
-            </div>
-        </div>
-    </div>
-</footer>
-<!-- Bootstrap core JS-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Core theme JS-->
-<script src="js/scripts.js"></script>
 </body>
-</html>
+{% endblock %}

@@ -14,11 +14,18 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- 네이버 지도 API -->
+    <script type="text/javascript"
+            src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=jadysuugp4"></script>
 </head>
 <body>
-{% include "navbar.html" %}
-{% block content %}
-{% endblock %}
-{% include "footer.html" %}
+<div class="wrapper">
+    {% include "navbar.html" %}
+    {% block content %}
+    {% endblock %}
+    {% include "footer.html" %}
+</div>
 </body>
 </html>

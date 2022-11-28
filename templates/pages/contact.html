@@ -58,16 +58,16 @@
         <!-- map -->
         <div class="mb-5">
             <div class="card h-100 align-items-center">
-                <div id="map" style="width:100%;height:500px;"></div>
+                <div id="map" class="card-img" style="width:100%;height:500px;"></div>
                 <script>
-                    var map = new naver.maps.Map('map', {
-                        center: new naver.maps.LatLng(37.560213, 126.982890),
-                        zoom: 17
-                    });
-                    var marker = new naver.maps.Marker({
-                        position: new naver.maps.LatLng(37.560213, 126.982890),
-                        map: map
-                    });
+                var map = new naver.maps.Map('map', {
+                    center: new naver.maps.LatLng(37.560213, 126.982890),
+                    zoom: 17
+                });
+                var marker = new naver.maps.Marker({
+                    position: new naver.maps.LatLng(37.560213, 126.982890),
+                    map: map
+                });
                 </script>
             </div>
         </div>

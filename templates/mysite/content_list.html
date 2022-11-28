@@ -15,13 +15,13 @@
             {% if content_list %}
             {% for content in content_list %}
             <div class="col mb-5">
-                <a class="card h-100" href="{% url 'detail' content.id %}">
+                <a class="text-decoration-none link-dark card h-100" href="{% url 'detail' content.id %}">
                     <!-- badge-->
                     <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">NEW</div>
                     <!-- Product image-->
                     <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..."/>
                     <!-- Product details-->
-                    <div class="card-body p-4">
+                    <div class="card-body">
                         <div class="text-center">
                             <!-- Product name-->
                             <h5 class="fw-bolder">{{content.title}}</h5>

@@ -7,6 +7,7 @@ class MainContent(models.Model):
     # image = models.ImageField(upload_to='static/files/', blank=True, null=True)
     pub_date = models.DateTimeField('date published')
 
+    # 제목을 문자열로 반환
     def __str__(self):
         return self.title
 

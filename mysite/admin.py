@@ -3,7 +3,13 @@ from .models import MainContent, Comment
 
 @admin.register(MainContent)
 class MainContentAdmin(admin.ModelAdmin):
-    list_display = ['id', 'title', 'pub_date']
-    list_display_links = ['id', 'title']
+    list_display = ['title', 'content', 'pub_date']
+    search_fields = ['title']
 
-admin.site.register(Comment)
+
+class CommentAdmin(admin.ModelAdmin):
+    list_display = ['content_list', 'content', 'author', 'create_date', 'modify_date']
+    search_fields = ['author']
+
+# admin.site.register(MainContent, MainContentAdmin)
+admin.site.register(Comment, CommentAdmin)

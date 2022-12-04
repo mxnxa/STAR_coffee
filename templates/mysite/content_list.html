@@ -17,7 +17,7 @@
             <div class="col mb-5">
                 <a class="text-decoration-none link-dark h-100" href="{% url 'detail' content.id %}">
                     <!-- badge-->
-                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">NEW</div>
+                    <div class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">NEW</div>
                     <!-- Product image-->
                     {% if content.image %}
                     <img class="card-img-top" src="{{content.image.url}}" alt="image"/>
@@ -28,7 +28,7 @@
                     <div class="card-body">
                         <div class="text-center">
                             <!-- Product name-->
-                            <h5 class="fw-bolder">{{content.title}}</h5>
+                            <h6 class="fw-bolder">{{content.title}}</h6>
                         </div>
                     </div>
                 </a>

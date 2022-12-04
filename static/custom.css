@@ -121,3 +121,9 @@ display: inherit;
   font-size: 14px;
   line-height: 2.5;
 }
+
+.badge {
+  padding: .7em .6em;
+  line-height: 2;
+  border-radius: 50%;
+}

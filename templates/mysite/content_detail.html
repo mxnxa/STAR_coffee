@@ -3,18 +3,18 @@
 <!-- Product section-->
 <div class="py-5">
     <div class="container px-4 px-lg-5 my-5">
-        <div class="row gx-4 gx-lg-5 mb-5 align-items-center">
-            <div class="col-md-6">
+        <div class="d-flex gx-4 gx-lg-5 mb-5 align-items-center">
+            <div class="col-md-5">
                 {% if content_list.image %}
                 <img class="card-img-top mb-5 mb-md-0" src="{{content_list.image.url}}" alt="image"/>
                 {% else %}
                 <img class="card-img-top mb-5 mb-md-0" src="https://dummyimage.com/600x700/dee2e6/6c757d.jpg" alt="..."/>
                 {% endif %}
             </div>
-            <div class="col-md-6">
-                <h1 class="fs-2 fw-bolder">{{content_list.title}}</h1>
+            <div class="col-md-7">
+                <h1 class="fs-4 fw-bolder">{{content_list.title}}</h1>
                 <div class="fs-5 mb-5"></div>
-                <p class="fs-5">{{content_list.content}}</p>
+                <p class="fs-6">{{content_list.content}}</p>
             </div>
         </div>
         <section class="mb-5">

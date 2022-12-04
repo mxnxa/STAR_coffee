@@ -598,7 +598,7 @@ progress {
 }
 
 .img-fluid {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
 }
 
@@ -623,20 +623,6 @@ progress {
 .figure-caption {
   font-size: 0.875em;
   color: #6c757d;
-}
-
-.wrapper {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.display-flex {
-  display: flex;
-  flex-direction: column
-  justify-content: center;
-  align-items: center;
-  flex: 1;
 }
 
 .container,

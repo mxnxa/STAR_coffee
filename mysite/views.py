@@ -76,4 +76,3 @@ def comment_delete(request, comment_id):
 #         }
 #     )
 
-# Create your views here.

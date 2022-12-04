@@ -1,0 +1,123 @@
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* navbar */
+.nav-item:hover .sub-menu {
+display: inherit;
+}
+
+.sub-menu {
+  position: absolute;
+  z-index: 1000;
+  display: none;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #f8f9fa !important;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+.sub-menu[data-bs-popper] {
+  top: 100%;
+  left: 0;
+  margin-top: 0.125rem;
+}
+
+.sub-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+.sub-item:hover, .sub-item:focus {
+  color: #1e2125;
+  text-decoration: none;
+  background-color: #e9ecef;
+}
+
+/* history */
+.history {
+  position: relative;
+}
+.history::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 100%;
+  background-color: #ddd;
+  z-index: 0;
+}
+
+.history .his_item {
+  width: 50%;
+  align-items: flex-start;
+  text-align: right;
+  margin-bottom: 3rem;
+    position: relative;
+  z-index: 1;
+}
+.history .his_item:nth-child(odd) {
+  flex-direction: row-reverse;
+  margin-left: 7.5px;
+}
+.history .his_item:nth-child(even) {
+  flex-direction: row;
+  text-align: left;
+  margin-left: calc(50% - 7.5px);
+}
+
+.history .his_item:nth-child(even) .his_dot {
+  flex-direction: row-reverse;
+}
+.history .his_item .his_dot::before {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 1px;
+  background-color: #28a745;
+}
+.history .his_item .his_dot::after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 3px solid #28a745;
+}
+
+.history .his_item .his_text {
+  position: relative;
+  top: -12px;
+  list-decoration: none;
+}
+.history .his_item:nth-child(odd) .his_text {
+  margin-right: 30px;
+}
+.history .his_item:nth-child(even) .his_text {
+  margin-left: 30px;
+}
+
+.history .his_item .his_text .his_list > li {
+  font-size: 14px;
+  line-height: 2.5;
+}

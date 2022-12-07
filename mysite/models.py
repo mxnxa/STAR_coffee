@@ -5,6 +5,7 @@ class MainContent(models.Model):
     title = models.CharField(max_length=200)
     content = models.TextField()
     image = models.ImageField(upload_to='mysite/images/%Y/%m/%d/', blank=True)
+
     pub_date = models.DateTimeField('date published')
 
     # 제목을 문자열로 반환

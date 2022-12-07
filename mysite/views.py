@@ -3,10 +3,14 @@ from django.shortcuts import get_object_or_404, render, redirect
 from django.contrib.auth.decorators import login_required
 from .models import MainContent, Comment
 from .forms import CommentForm
+from datetime import datetime, timezone
+from datetime import timedelta
 
 def index(request):
     content_list = MainContent.objects.order_by('title')
-    context = {'content_list': content_list}
+    # new 배지 기능을 위한 날짜 비교
+    new_90 = datetime.now(timezone.utc) - timedelta(days=90)
+    context = {'content_list': content_list, 'new_90': new_90}
     return render(request, 'mysite/content_list.html', context)
 
 # 상품 상세 페이지

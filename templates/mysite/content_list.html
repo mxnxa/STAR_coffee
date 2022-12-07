@@ -17,7 +17,9 @@
             <div class="col mb-5">
                 <a class="text-decoration-none link-dark h-100" href="{% url 'detail' content.id %}">
                     <!-- badge-->
+                    {% if content.pub_date > new_90 %}
                     <div class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">NEW</div>
+                    {% endif %}
                     <!-- Product image-->
                     {% if content.image %}
                     <img class="card-img-top" src="{{content.image.url}}" alt="image"/>

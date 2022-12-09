@@ -50,6 +50,17 @@ display: inherit;
   background-color: #e9ecef;
 }
 
+/* mainpage */
+.carousel .carousel-inner .carousel-item:nth-child(1) {
+  background: center / cover url("/static/images/christmas.jpg");
+}
+.carousel .carousel-inner .carousel-item:nth-child(2) {
+  background: center / cover url("/static/images/christmas_BG.png");
+}
+.carousel .carousel-inner .carousel-item:nth-child(3) {
+  background: center / cover url("/static/images/christmas.jpg");
+}
+
 /* history */
 .history {
   position: relative;

@@ -57,7 +57,6 @@ def comment_update(request, comment_id):
     context = {'comment': comment, 'form': form}
     return render(request, 'mysite/comment_form.html', context)
 
-
 # 댓글 삭제
 @login_required(login_url='accounts:login')
 def comment_delete(request, comment_id):
@@ -68,15 +67,4 @@ def comment_delete(request, comment_id):
     else:
         comment.delete()
     return redirect('detail', content_id=comment.content_list.id)
-
-# def files(request):
-#     product_img = MainContent.objects.all()
-#
-#     return render(
-#         request,
-#         'mysite/base.html',
-#         {
-#             'product_img': product_img
-#         }
-#     )
 

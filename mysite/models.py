@@ -5,7 +5,6 @@ class MainContent(models.Model):
     title = models.CharField(max_length=200)
     content = models.TextField()
     image = models.ImageField(upload_to='mysite/images/%Y/%m/%d/', blank=True)
-
     pub_date = models.DateTimeField('date published')
 
     # 제목을 문자열로 반환
@@ -18,4 +17,3 @@ class Comment(models.Model):
     content = models.TextField()
     create_date = models.DateTimeField(auto_now_add=True)
     modify_date = models.DateTimeField(auto_now=True)
-
